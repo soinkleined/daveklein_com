@@ -1,48 +1,37 @@
 /*!
- * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ * Creative Theme - custom JS (vanilla, no jQuery)
  */
+(function () {
+  'use strict';
 
-(function($) {
-    "use strict"; // Start of use strict
-
-    // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
-        }, 1250, 'easeInOutExpo');
-        event.preventDefault();
+  // Smooth scroll for .page-scroll links
+  document.querySelectorAll('a.page-scroll').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      var target = document.querySelector(this.getAttribute('href'));
+      if (!target) return;
+      e.preventDefault();
+      var top = target.getBoundingClientRect().top + window.scrollY - 50;
+      window.scrollTo({ top: top, behavior: 'smooth' });
     });
+  });
 
-    // Highlight the top nav as scrolling occurs
-    $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 51
-    })
+  // Add .navbar-scrolled class when page scrolls past 100px
+  var mainNav = document.getElementById('mainNav');
+  if (mainNav) {
+    window.addEventListener('scroll', function () {
+      mainNav.classList.toggle('navbar-scrolled', window.scrollY > 100);
+    }, { passive: true });
+  }
 
-    // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function() {
-        $('.navbar-toggle:visible').click();
+  // Close mobile navbar when a nav link is clicked
+  var navbarCollapse = document.getElementById('navbarNav');
+  if (navbarCollapse) {
+    navbarCollapse.querySelectorAll('.nav-link').forEach(function (link) {
+      link.addEventListener('click', function () {
+        var bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+        if (bsCollapse) bsCollapse.hide();
+      });
     });
+  }
 
-    // Fit Text Plugin for Main Header
-    $("h1").fitText(
-        1.2, {
-            minFontSize: '35px',
-            maxFontSize: '65px'
-        }
-    );
-
-    // Offset for Main Navigation
-    $('#mainNav').affix({
-        offset: {
-            top: 100
-        }
-    })
-
-    // Initialize WOW.js Scrolling Animations
-    new WOW().init();
-
-})(jQuery); // End of use strict
+})();
