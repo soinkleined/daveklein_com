@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Welcome to my new site"
-date: 2026-05-25 12:00:00 +0000
+date: 2026-05-24 12:00:00 +0000
 description: "An introduction to the new modernized Jekyll theme."
 ---
 
