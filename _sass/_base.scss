@@ -106,7 +106,7 @@ aside {
         }
         &.active {
             color: $theme-primary !important;
-            text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+            border-bottom: 2px solid $theme-primary;
             font-weight: 700 !important;
         }
     }
