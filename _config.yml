@@ -1,14 +1,14 @@
 # Site settings — replace all dummy values before deploying
-title:          "My Website"
+title:          "daveklein.com"
 description:    "A personal website."
 baseurl:        ""        # subpath of your site, e.g. /blog
-url:            "https://example.com"
-author:         "Your Name"
-email:          "you@example.com"
+url:            "https://www.daveklein.com"
+author:         "David Klein"
+email:          "info@daveklein.com"
 
 # Social — leave blank to hide the link
-twitter_username: yourhandle
-github_username:  yourhandle
+twitter_username: 
+github_username:  
 
 # Build settings
 markdown:    kramdown

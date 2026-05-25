@@ -1,7 +1,7 @@
 @use "sass:color";
 @use "mixins" as *;
 
-$theme-primary: #F05F40;
+$theme-primary: #4a6fa5;
 $theme-dark: #222;
 
 html,
@@ -143,9 +143,9 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/header.jpg');
     text-align: center;
-    color: white;
+    color: #fff;
     .header-content {
         position: relative;
         text-align: center;
@@ -157,15 +157,18 @@ header {
                 text-transform: uppercase;
                 margin-top: 0;
                 margin-bottom: 0;
+                text-shadow: 0 3px 10px rgba(0, 0, 0, 0.9);
             }
             hr {
                 margin: 30px auto;
+                border-color: #fff;
             }
             p {
                 font-weight: 300;
-                color: rgba(white, .7);
+                color: #fff;
                 font-size: 16px;
                 margin-bottom: 50px;
+                text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
             }
         }
     }
