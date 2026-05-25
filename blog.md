@@ -8,13 +8,13 @@ permalink: /blog/
     <div class="row">
         <div class="col-lg-10 offset-lg-1">
             {% for post in site.posts %}
-                <div class="row mb-5 align-items-center">
-                    <div class="col-md-3">
+                <div class="row mb-5 align-items-start">
+                    <div class="col-md-4">
                         <a href="{{ post.url | relative_url }}">
                             <img src="{{ post.image | default: '/img/portfolio/1.jpg' | relative_url }}" class="img-fluid rounded" alt="{{ post.title }}">
                         </a>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-8">
                         <p class="text-muted mb-1">{{ post.date | date: "%B %d, %Y" }}</p>
                         <h2 class="mb-2"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
                         {% if post.categories %}
