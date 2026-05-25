@@ -4,22 +4,22 @@
   icon: fa-brands fa-github
 - platform: LinkedIn
   username: 
-  url: 
+  url: https://www.linkedin.com/in/davidjklein/ 
   icon: fa-brands fa-linkedin
-- platform: Mastodon
-  username: 
-  url: 
-  icon: fa-brands fa-mastodon
-- platform: Bluesky
-  username: 
-  url: 
-  icon: fa-brands fa-bluesky
-- platform: Twitter
-  username: 
-  url: 
-  icon: fa-brands fa-twitter
 
 # --- Commented examples for future use ---
+#- platform: Mastodon
+#  username: 
+#  url: 
+#  icon: fa-brands fa-mastodon
+#- platform: Bluesky
+#  username: 
+#  url: 
+#  icon: fa-brands fa-bluesky
+#- platform: Twitter
+#  username: 
+#  url: 
+#  icon: fa-brands fa-twitter
 # - platform: Instagram
 #   username: 
 #   url: 

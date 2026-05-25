@@ -1,21 +1,28 @@
 ---
 layout: page
+title: "Category Archive"
 ---
 
 <div class="container py-5">
-    <h1 class="mb-4">Posts in {{ page.category }}</h1>
     <div class="row">
-        {% for post in site.categories[page.category] %}
-        <div class="col-lg-4 col-sm-6 mb-4">
-            <a href="{{ post.url | relative_url }}" class="portfolio-box">
-                <img src="{{ post.image | default: '/img/portfolio/1.jpg' | relative_url }}" class="img-fluid" alt="{{ post.title }}">
-                <div class="portfolio-box-caption">
-                    <div class="portfolio-box-caption-content">
-                        <div class="project-name">{{ post.title }}</div>
+        <div class="col-lg-10 offset-lg-1">
+            {% assign posts_in_category = site.posts | where_exp:"post", "post.categories contains page.category" %}
+            <h1 class="mb-5">Posts in {{ page.category }}</h1>
+            
+            {% for post in posts_in_category %}
+                <div class="row mb-5 align-items-start">
+                    <div class="col-md-4">
+                        <a href="{{ post.url | relative_url }}">
+                            <img src="{{ post.image | default: '/img/portfolio/1.jpg' | relative_url }}" class="img-fluid rounded" alt="{{ post.title }}">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="text-muted mb-1">{{ post.date | date: "%B %d, %Y" }}</p>
+                        <h2 class="mb-2"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+                        <p>{{ post.description }}</p>
                     </div>
                 </div>
-            </a>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </div>

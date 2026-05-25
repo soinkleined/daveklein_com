@@ -15,7 +15,7 @@
                         <div class="project-category text-faded">
                             {% if post.categories %}
                               {% for category in post.categories %}
-                                {{ category }}{% unless forloop.last %}, {% endunless %}
+                                <a href="{{ '/categories/' | append: category | slugify | relative_url }}" class="text-white">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
                               {% endfor %}
                             {% endif %}
                         </div>
