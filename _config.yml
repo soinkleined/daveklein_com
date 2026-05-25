@@ -8,7 +8,10 @@ email:          "info@daveklein.com"
 
 # Social — leave blank to hide the link
 twitter_username: 
-github_username:  
+github_username: soinkleined
+linkedin_username:
+mastodon_username:
+bluesky_username:
 
 # Build settings
 markdown:    kramdown
