@@ -204,10 +204,10 @@ header {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/header.jpg') !important;
         background-size: cover;
         background-position: top center;
-        min-height: 150px !important;
+        min-height: 100px !important; // Reduced from 150px
         width: 100%;
         display: block;
-        padding-top: 60px !important; // Add padding to account for fixed navbar
+        padding-top: 40px !important; // Reduced from 60px
     }
 }
 
