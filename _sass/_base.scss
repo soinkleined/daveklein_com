@@ -4,14 +4,20 @@
 $theme-primary: #4a6fa5;
 $theme-dark: #222;
 
-html,
-body {
+html {
     height: 100%;
-    width: 100%;
 }
 
 body {
     @include serif-font;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+// Wrapper for main content to push footer down
+.content-wrapper {
+    flex: 1;
 }
 
 hr {
