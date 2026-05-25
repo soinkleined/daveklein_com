@@ -1,6 +1,7 @@
 ---
 layout: cv
 title: "CV"
+permalink: /cv/
 description: "Cloud and Infrastructure Services Engineering"
 ---
 
