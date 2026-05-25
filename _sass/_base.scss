@@ -153,7 +153,8 @@ header {
         background-position: top center;
         min-height: 150px !important;
         width: 100%;
-        display: block; // Explicit block to ensure layout flow
+        display: block;
+        padding-top: 60px !important; // Add padding to account for fixed navbar
     }
     .header-content {
         position: relative;
