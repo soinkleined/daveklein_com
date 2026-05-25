@@ -52,7 +52,7 @@ layout: page
 title: "My CV"
 description: "A brief overview of my professional experience."
 ---
-# Experience
+# CV
 * Item 1...
 ```
 
@@ -70,5 +70,5 @@ Your content here...
 
 - Reorder or remove sections in `_layouts/front.html`.
 - Theme colour is set via `$theme-primary` in `_sass/_base.scss` (default: `#F05F40`).
-- Each section is a separate include in `_includes/` (e.g., `experience.html`, `blog.html`).
+- Each section is a separate include in `_includes/` (e.g., `cv.html`, `blog.html`).
 - Social links (Twitter, GitHub, email) are driven by `_config.yml` — set `twitter_username`, `github_username`, and `email`. Leave blank to hide.

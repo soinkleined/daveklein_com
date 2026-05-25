@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Experience"
+title: "CV"
 description: "My professional journey and skills."
 ---
 
-# Professional Experience
+# CV
 
 *   **Senior Developer** @ Tech Corp (2024 - Present)
     *   Leading the modernization of Jekyll-based themes.
