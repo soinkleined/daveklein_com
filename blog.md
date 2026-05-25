@@ -23,14 +23,6 @@ permalink: /blog/
                                 <p class="text-muted mb-1">{{ post.date | date: "%B %d, %Y" }}</p>
                                 <h2 class="mb-2"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
                                 
-                                {% if post.categories %}
-                                    <div class="mb-3">
-                                        {% for category in post.categories %}
-                                            <span class="badge bg-primary me-1">{{ category }}</span>
-                                        {% endfor %}
-                                    </div>
-                                {% endif %}
-                                
                                 <p>{{ post.description }}</p>
                             </div>
                         </div>
