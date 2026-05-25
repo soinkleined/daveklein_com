@@ -5,7 +5,7 @@ permalink: /blog/
 ---
 
 <div class="container py-5">
-    <div class="row mb-4">
+    <div class="row mb-5">
         <div class="col text-center" id="filter-nav">
             <button class="btn btn-outline-primary active filter-btn" data-filter="all">All</button>
             {% assign all_categories = site.posts | map: "categories" | flatten | uniq | sort %}
