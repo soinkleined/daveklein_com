@@ -15,12 +15,19 @@
                         <div class="project-category text-faded">
                             {% if post.categories %}
                               {% for category in post.categories %}
-                                <a href="{{ '/blog/' | relative_url }}#{{ category | slugify }}" class="text-white">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+                                {{ category }}{% unless forloop.last %}, {% endunless %}
                               {% endfor %}
                             {% endif %}
-                        </div>                    </div>
+                        </div>
+                    </div>
                 </div>
             </a>
+            <!-- Move category links OUTSIDE the portfolio-box anchor -->
+            <div class="text-center mt-2">
+                {% for category in post.categories %}
+                    <a href="{{ '/blog/' | relative_url }}#{{ category | slugify }}" class="badge bg-primary text-decoration-none">{{ category }}</a>
+                {% endfor %}
+            </div>
         </div>
         {% endfor %}
     </div>
