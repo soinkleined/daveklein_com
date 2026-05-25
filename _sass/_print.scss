@@ -1,0 +1,102 @@
+@media print {
+    // Hide non-essential elements
+    #mainNav,
+    #contact,
+    footer,
+    .btn,
+    .no-print {
+        display: none !important;
+    }
+
+    // Reset body and background
+    body {
+        background-color: #fff !important;
+        color: #000 !important;
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+
+    // Adjust header for print
+    header {
+        background: none !important;
+        color: #000 !important;
+        padding-top: 0 !important;
+        padding-bottom: 20px !important;
+        border-bottom: 2px solid #000;
+        margin-bottom: 30px;
+
+        .text-white {
+            color: #000 !important;
+        }
+        
+        .text-white-50 {
+            color: #666 !important;
+        }
+
+        h1 {
+            font-size: 28pt !important;
+            margin-bottom: 5px !important;
+        }
+    }
+
+    // Adjust container and columns
+    .container {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .row {
+        display: block !important;
+    }
+
+    .col-lg-8 {
+        width: 100% !important;
+        max-width: none !important;
+        flex: 0 0 100% !important;
+    }
+
+    // Headings
+    h1, h2, h3, h4, h5, h6 {
+        color: #000 !important;
+        page-break-after: avoid;
+        margin-top: 20pt !important;
+    }
+
+    // Links
+    a {
+        text-decoration: underline !important;
+        color: #000 !important;
+        
+        // Show URLs after links if they aren't already obvious
+        &[href^="http"]:after {
+            content: " (" attr(href) ")";
+            font-size: 9pt;
+        }
+    }
+
+    // Lists and spacing
+    ul, ol {
+        margin-bottom: 15pt;
+    }
+
+    li {
+        margin-bottom: 5pt;
+    }
+
+    // Page breaks
+    section {
+        page-break-inside: auto;
+    }
+
+    article, p, blockquote {
+        page-break-inside: avoid;
+    }
+
+    // Skills section - keep columns if possible, otherwise block
+    .row.justify-content-center {
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
+}
