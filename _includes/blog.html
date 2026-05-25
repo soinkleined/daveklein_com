@@ -15,11 +15,10 @@
                         <div class="project-category text-faded">
                             {% if post.categories %}
                               {% for category in post.categories %}
-                                {{ category }}{% unless forloop.last %}, {% endunless %}
+                                <a href="{{ '/blog/' | relative_url }}#{{ category | slugify }}" class="text-white">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
                               {% endfor %}
                             {% endif %}
-                        </div>
-                    </div>
+                        </div>                    </div>
                 </div>
             </a>
         </div>

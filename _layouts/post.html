@@ -23,9 +23,8 @@
           {% if page.categories %}
             <div class="mb-4">
               {% for category in page.categories %}
-                <a href="{{ '/categories/' | relative_url }}#{{ category | slugify }}" class="badge bg-primary text-decoration-none me-1">{{ category }}</a>
-              {% endfor %}
-            </div>
+                <a href="{{ '/blog/' | relative_url }}#{{ category | slugify }}" class="badge bg-primary text-decoration-none me-1">{{ category }}</a>
+              {% endfor %}            </div>
           {% endif %}
 
           {{ content }}
