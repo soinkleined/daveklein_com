@@ -17,11 +17,12 @@
             <img src="{{ page.image | relative_url }}" class="img-fluid w-100 mb-4" alt="{{ page.title }}">
           {% endif %}
           <h1 class="mb-4">{{ page.title }}</h1>
+          <p class="text-muted mb-4">{{ page.date | date: "%B %d, %Y" }}</p>
           
           {% if page.categories %}
             <div class="mb-4">
               {% for category in page.categories %}
-                <span class="badge bg-primary me-1">{{ category }}</span>
+                <a href="{{ '/categories/' | append: category | slugify | relative_url }}" class="badge bg-primary text-decoration-none me-1">{{ category }}</a>
               {% endfor %}
             </div>
           {% endif %}
