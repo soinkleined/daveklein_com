@@ -38,7 +38,7 @@ This theme is configured for deployment via GitHub Actions.
 2. **Build and deployment**: Under **Source**, select **GitHub Actions**.
 3. **Deploy**: Any push to the `main` branch will automatically build and deploy the site.
 
-Live URL: [https://soinkleined.github.io/creative-theme-jekyll/](https://soinkleined.github.io/creative-theme-jekyll/)
+Live URL: [https://soinkleined.github.io/daveklein_com/](https://soinkleined.github.io/daveklein_com/)
 
 ## Writing Content (Markdown Support)
 
