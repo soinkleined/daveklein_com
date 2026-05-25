@@ -3,6 +3,7 @@ layout: post
 title: "Welcome to my new site"
 date: 2026-05-24 12:00:00 +0000
 description: "An introduction to the new modernized Jekyll theme."
+categories: [Jekyll, General]
 image: /img/portfolio/1.jpg
 ---
 
