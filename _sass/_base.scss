@@ -105,7 +105,7 @@ aside {
             color: $theme-primary;
         }
         &.active {
-            color: white !important;
+            color: $theme-primary !important;
             border-bottom: 2px solid $theme-primary;
             font-weight: 700 !important;
         }
