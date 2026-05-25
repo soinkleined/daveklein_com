@@ -211,8 +211,15 @@ header {
     }
 }
 
-.section-heading {
-    margin-top: 0;
+// Filter buttons
+.filter-btn.btn-outline-primary {
+    color: $theme-primary;
+    border-color: $theme-primary;
+    &:hover, &.active {
+        color: white;
+        background-color: $theme-primary;
+        border-color: $theme-primary;
+    }
 }
 .service-box {
     max-width: 400px;
