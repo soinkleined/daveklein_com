@@ -1,27 +1,25 @@
-<section id="blog">
-    <div class="container-fluid">
-        <div class="row g-0">
-            {% for post in site.posts %}
-            <div class="col-lg-4 col-sm-6">
-                <a href="{{ post.url | relative_url }}" class="portfolio-box">
-                    <img src="{{ post.image | default: '/img/portfolio/1.jpg' | relative_url }}" class="img-fluid" alt="{{ post.title }}">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                {% if post.categories %}
-                                  {% for category in post.categories %}
-                                    {{ category }}{% unless forloop.last %}, {% endunless %}
-                                  {% endfor %}
-                                {% endif %}
-                            </div>
-                            <div class="project-name">
-                                {{ post.title }}
-                            </div>
+<div id="blog" class="container-fluid">
+    <div class="row g-0">
+        {% for post in site.posts %}
+        <div class="col-lg-4 col-sm-6">
+            <a href="{{ post.url | relative_url }}" class="portfolio-box">
+                <img src="{{ post.image | default: '/img/portfolio/1.jpg' | relative_url }}" class="img-fluid" alt="{{ post.title }}">
+                <div class="portfolio-box-caption">
+                    <div class="portfolio-box-caption-content">
+                        <div class="project-category text-faded">
+                            {% if post.categories %}
+                              {% for category in post.categories %}
+                                {{ category }}{% unless forloop.last %}, {% endunless %}
+                              {% endfor %}
+                            {% endif %}
+                        </div>
+                        <div class="project-name">
+                            {{ post.title }}
                         </div>
                     </div>
-                </a>
-            </div>
-            {% endfor %}
+                </div>
+            </a>
         </div>
+        {% endfor %}
     </div>
-</section>
+</div>
