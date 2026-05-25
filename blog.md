@@ -7,10 +7,10 @@ permalink: /blog/
 <div class="container py-5">
     <div class="row mb-4">
         <div class="col text-center" id="filter-nav">
-            <button class="btn btn-outline-primary active filter-btn" data-filter="all">All</button>
+            <button class="btn btn-primary active filter-btn" data-filter="all">All</button>
             {% assign all_categories = site.posts | map: "categories" | flatten | uniq | sort %}
             {% for category in all_categories %}
-                <button class="btn btn-outline-primary filter-btn" data-filter="{{ category | slugify }}">{{ category }}</button>
+                <button class="btn btn-primary filter-btn" data-filter="{{ category | slugify }}">{{ category }}</button>
             {% endfor %}
         </div>
     </div>
