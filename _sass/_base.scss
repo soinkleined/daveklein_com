@@ -148,12 +148,11 @@ header {
     color: #fff;
 
     &.header-subpage {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/header.jpg') !important;
+        padding: 50px 15px; // Matches standard home page padding but smaller
+        min-height: auto !important;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/header.jpg') !important;
         background-size: cover;
         background-position: center;
-        min-height: 150px !important;
-        padding-top: 30px !important;
-        padding-bottom: 30px !important;
     }
     .header-content {
         position: relative;
