@@ -40,6 +40,32 @@ This theme is configured for deployment via GitHub Actions.
 
 Live URL: [https://soinkleined.github.io/creative-theme-jekyll/](https://soinkleined.github.io/creative-theme-jekyll/)
 
+## Writing Content (Markdown Support)
+
+The theme has been extended to support Markdown-driven content for blogs, CVs, and other standalone pages.
+
+### Creating Pages (e.g., CV)
+Create a `.md` file in the root directory and use the `page` layout:
+```markdown
+---
+layout: page
+title: "My CV"
+description: "A brief overview of my professional experience."
+---
+# Experience
+* Item 1...
+```
+
+### Creating Blog Posts
+Add Markdown files to the `_posts/` directory using the `YYYY-MM-DD-title.md` format:
+```markdown
+---
+layout: page
+title: "My First Post"
+---
+Your content here...
+```
+
 ## Customisation
 
 - Reorder or remove sections in `_layouts/front.html`.
