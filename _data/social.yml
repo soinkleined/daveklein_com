@@ -18,3 +18,21 @@
   username: 
   url: 
   icon: fa-brands fa-twitter
+
+# --- Commented examples for future use ---
+# - platform: Instagram
+#   username: 
+#   url: 
+#   icon: fa-brands fa-instagram
+# - platform: YouTube
+#   username: 
+#   url: 
+#   icon: fa-brands fa-youtube
+# - platform: Facebook
+#   username: 
+#   url: 
+#   icon: fa-brands fa-facebook
+# - platform: Stack Overflow
+#   username: 
+#   url: 
+#   icon: fa-brands fa-stack-overflow
