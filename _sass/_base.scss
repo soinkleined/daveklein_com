@@ -66,9 +66,9 @@ section {
     padding: 100px 0;
 }
 
-// Remove padding specifically for the blog section to keep it flush
-#blog {
-    padding: 0;
+// Sticky footer helper: ensure content is long enough to push footer
+.content-min-height {
+    min-height: 60vh;
 }
 
 aside {
