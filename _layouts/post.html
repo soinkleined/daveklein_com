@@ -6,34 +6,32 @@
 <body id="page-top">
   {% include nav.html %}
 
-  <div class="content-wrapper">
-    <header class="header-subpage bg-dark pt-3 pb-2">
-    </header>
+  <header class="header-subpage bg-dark pt-3 pb-2">
+  </header>
 
-    <section class="py-4">
-      <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-          <div class="col-lg-8">
-            {% if page.image %}
-              <img src="{{ page.image | relative_url }}" class="img-fluid w-100 mb-4" alt="{{ page.title }}">
-            {% endif %}
-            
-            <p class="text-muted mb-1">{{ page.date | date: "%B %d, %Y" }}</p>
-            <h1 class="mb-2">{{ page.title }}</h1>
-            
-            {% if page.categories %}
-              <div class="mb-4">
-                {% for category in page.categories %}
-                  <a href="{{ '/blog/' | relative_url }}#{{ category | slugify }}" class="badge bg-primary text-decoration-none me-1">{{ category }}</a>
-                {% endfor %}            </div>
-            {% endif %}
+  <section class="py-4">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-8">
+          {% if page.image %}
+            <img src="{{ page.image | relative_url }}" class="img-fluid w-100 mb-4" alt="{{ page.title }}">
+          {% endif %}
+          
+          <p class="text-muted mb-1">{{ page.date | date: "%B %d, %Y" }}</p>
+          <h1 class="mb-2">{{ page.title }}</h1>
+          
+          {% if page.categories %}
+            <div class="mb-4">
+              {% for category in page.categories %}
+                <a href="{{ '/blog/' | relative_url }}#{{ category | slugify }}" class="badge bg-primary text-decoration-none me-1">{{ category }}</a>
+              {% endfor %}            </div>
+          {% endif %}
 
-            {{ content }}
-          </div>
+          {{ content }}
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
   {% include footer.html %}
   {% include scripts.html %}
