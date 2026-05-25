@@ -146,7 +146,7 @@ aside {
 
 // Homepage Header
 
-.main-header {
+header {
     position: relative;
     width: 100%;
     min-height: auto;
@@ -155,26 +155,65 @@ aside {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/header.jpg');
     text-align: center;
     color: #fff;
-    
-    @media (min-width: 768px) {
-        min-height: 100%;
-        .header-content {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            padding: 0 50px;
-            .header-content-inner {
-                max-width: 1000px;
-                margin-left: auto;
-                margin-right: auto;
-                p {
-                    font-size: 18px;
-                    max-width: 80%;
+
+    &:not(.header-subpage) {
+        @media (min-width: 768px) {
+            min-height: 100%;
+            .header-content {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 0 50px;
+                .header-content-inner {
+                    max-width: 1000px;
                     margin-left: auto;
                     margin-right: auto;
+                    p {
+                        font-size: 18px;
+                        max-width: 80%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
                 }
             }
         }
+    }
+    
+    .header-content {
+        position: relative;
+        text-align: center;
+        padding: 100px 15px 100px;
+        width: 100%;
+        .header-content-inner {
+            h1 {
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-top: 0;
+                margin-bottom: 0;
+                text-shadow: 0 3px 10px rgba(0, 0, 0, 0.9);
+            }
+            hr {
+                margin: 30px auto;
+                border-color: #fff;
+            }
+            p {
+                font-weight: 300;
+                color: #fff;
+                font-size: 16px;
+                margin-bottom: 50px;
+                text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+            }
+        }
+    }
+
+    &.header-subpage {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/header.jpg') !important;
+        background-size: cover;
+        background-position: top center;
+        min-height: 150px !important;
+        width: 100%;
+        display: block;
+        padding-top: 60px !important; // Add padding to account for fixed navbar
     }
 }
 
