@@ -30,6 +30,16 @@ bundle install
 bundle exec jekyll serve
 ```
 
+## GitHub Pages Deployment
+
+This theme is configured for deployment via GitHub Actions.
+
+1. **Repository Settings**: In your GitHub repo, go to **Settings > Pages**.
+2. **Build and deployment**: Under **Source**, select **GitHub Actions**.
+3. **Deploy**: Any push to the `main` branch will automatically build and deploy the site.
+
+Live URL: [https://soinkleined.github.io/creative-theme-jekyll/](https://soinkleined.github.io/creative-theme-jekyll/)
+
 ## Customisation
 
 - Reorder or remove sections in `_layouts/front.html`.
