@@ -209,11 +209,11 @@ header {
     }
 }
 
-// Sections
+#blog {
+    padding: 0 !important;
+}
 
 .section-heading {
-    margin-top: 0;
-}
 
 .service-box {
     max-width: 400px;
