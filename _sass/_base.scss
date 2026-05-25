@@ -61,8 +61,14 @@ p {
     color: rgba(white, .7);
 }
 
+// Default section padding
 section {
-    padding: 0;
+    padding: 100px 0;
+}
+
+// Remove padding specifically for the blog section to keep it flush
+#blog {
+    padding: 0 !important;
 }
 
 aside {
