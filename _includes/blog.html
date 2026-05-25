@@ -7,13 +7,13 @@
                 <div class="portfolio-box-caption">
                     <div class="portfolio-box-caption-content">
                         <div class="project-category text-faded">
+                            {{ post.date | date: "%B %d, %Y" }}
                             {% if post.categories %}
-                              {% for category in post.categories %}
+                              &bull; {% for category in post.categories %}
                                 {{ category }}{% unless forloop.last %}, {% endunless %}
                               {% endfor %}
                             {% endif %}
-                        </div>
-                        <div class="project-name">
+                        </div>                        <div class="project-name">
                             {{ post.title }}
                         </div>
                     </div>
