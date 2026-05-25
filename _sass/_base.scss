@@ -68,7 +68,7 @@ section {
 
 // Sticky footer helper: ensure content is long enough to push footer
 .content-min-height {
-    min-height: 80vh;
+    min-height: calc(100vh - 250px);
 }
 
 aside {
