@@ -104,11 +104,6 @@ aside {
         &:hover {
             color: $theme-primary;
         }
-        &.active {
-            color: $theme-primary !important;
-            border-bottom: 2px solid $theme-primary;
-            font-weight: 700 !important;
-        }
     }
 
     @media (min-width: 992px) {
