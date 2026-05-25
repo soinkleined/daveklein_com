@@ -146,6 +146,12 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/header.jpg');
     text-align: center;
     color: #fff;
+
+    &.header-subpage {
+        background-image: none !important;
+        min-height: auto !important;
+        padding-top: 50px !important;
+    }
     .header-content {
         position: relative;
         text-align: center;
@@ -174,6 +180,11 @@ header {
     }
     @media (min-width: 768px) {
         min-height: 100%;
+
+        &.header-subpage {
+            min-height: auto !important;
+        }
+
         .header-content {
             position: absolute;
             top: 50%;
