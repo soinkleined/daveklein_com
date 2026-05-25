@@ -146,7 +146,7 @@ aside {
 
 // Homepage Header
 
-header {
+.main-header {
     position: relative;
     width: 100%;
     min-height: auto;
@@ -155,49 +155,9 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/header.jpg');
     text-align: center;
     color: #fff;
-
-    &.header-subpage {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/header.jpg') !important;
-        background-size: cover;
-        background-position: top center;
-        min-height: 150px !important;
-        width: 100%;
-        display: block;
-        padding-top: 60px !important; // Add padding to account for fixed navbar
-    }
-    .header-content {
-        position: relative;
-        text-align: center;
-        padding: 100px 15px 100px;
-        width: 100%;
-        .header-content-inner {
-            h1 {
-                font-weight: 700;
-                text-transform: uppercase;
-                margin-top: 0;
-                margin-bottom: 0;
-                text-shadow: 0 3px 10px rgba(0, 0, 0, 0.9);
-            }
-            hr {
-                margin: 30px auto;
-                border-color: #fff;
-            }
-            p {
-                font-weight: 300;
-                color: #fff;
-                font-size: 16px;
-                margin-bottom: 50px;
-                text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
-            }
-        }
-    }
+    
     @media (min-width: 768px) {
         min-height: 100%;
-
-        &.header-subpage {
-            min-height: auto !important;
-        }
-
         .header-content {
             position: absolute;
             top: 50%;
