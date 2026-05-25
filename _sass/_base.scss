@@ -148,10 +148,12 @@ header {
     color: #fff;
 
     &.header-subpage {
-        background-image: none !important;
-        min-height: auto !important;
-        padding-top: 20px !important;
-        padding-bottom: 20px !important;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/header.jpg') !important;
+        background-size: cover;
+        background-position: center;
+        min-height: 150px !important;
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
     }
     .header-content {
         position: relative;
