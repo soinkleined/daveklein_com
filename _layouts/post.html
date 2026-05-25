@@ -16,18 +16,17 @@
           {% if page.image %}
             <img src="{{ page.image | relative_url }}" class="img-fluid w-100 mb-4" alt="{{ page.title }}">
           {% endif %}
-          <h1 class="mb-4">{{ page.title }}</h1>
           
-          <div class="d-flex align-items-center mb-4">
-            <p class="text-muted mb-0 me-3">{{ page.date | date: "%B %d, %Y" }}</p>
-            {% if page.categories %}
-              <div>
-                {% for category in page.categories %}
-                  <a href="{{ '/categories/' | relative_url }}#{{ category | slugify }}" class="badge bg-primary text-decoration-none me-1">{{ category }}</a>
-                {% endfor %}
-              </div>
-            {% endif %}
-          </div>
+          <p class="text-muted mb-1">{{ page.date | date: "%B %d, %Y" }}</p>
+          <h1 class="mb-2">{{ page.title }}</h1>
+          
+          {% if page.categories %}
+            <div class="mb-4">
+              {% for category in page.categories %}
+                <a href="{{ '/categories/' | relative_url }}#{{ category | slugify }}" class="badge bg-primary text-decoration-none me-1">{{ category }}</a>
+              {% endfor %}
+            </div>
+          {% endif %}
 
           {{ content }}
         </div>
