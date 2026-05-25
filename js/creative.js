@@ -7,11 +7,35 @@
   // Smooth scroll for .page-scroll links
   document.querySelectorAll('a.page-scroll').forEach(function (link) {
     link.addEventListener('click', function (e) {
-      var target = document.querySelector(this.getAttribute('href'));
-      if (!target) return;
-      e.preventDefault();
-      var top = target.getBoundingClientRect().top + window.scrollY - 50;
-      window.scrollTo({ top: top, behavior: 'smooth' });
+      var href = this.getAttribute('href');
+      
+      // If the link is just an anchor on the current page
+      if (href.startsWith('#')) {
+        var target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          var top = target.getBoundingClientRect().top + window.scrollY - 50;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }
+      } 
+      // If it's a full URL that ends with an anchor on the home page
+      else if (href.includes('#')) {
+        var parts = href.split('#');
+        var path = parts[0];
+        var hash = '#' + parts[1];
+        
+        // If we're already on the home page (or the path matches), just scroll
+        if (window.location.pathname === path || window.location.pathname === path + '/' || path === '/') {
+          var target = document.querySelector(hash);
+          if (target) {
+            e.preventDefault();
+            var top = target.getBoundingClientRect().top + window.scrollY - 50;
+            window.scrollTo({ top: top, behavior: 'smooth' });
+            // Update URL without reload
+            history.pushState(null, null, hash);
+          }
+        }
+      }
     });
   });
 
