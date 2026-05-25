@@ -1,8 +1,8 @@
 # Site settings — replace all dummy values before deploying
 title:          "daveklein.com"
 description:    "A personal website."
-baseurl:        ""        # subpath of your site, e.g. /blog
-url:            "https://www.daveklein.com"
+baseurl:        "/creative-theme-jekyll"        # subpath of your site, e.g. /blog
+url:            "https://soinkleined.github.io"
 author:         "David Klein"
 email:          "info@daveklein.com"
 
