@@ -38,6 +38,9 @@ This theme is configured for deployment via GitHub Actions.
 2. **Build and deployment**: Under **Source**, select **GitHub Actions**.
 3. **Deploy**: Any push to the `main` branch will automatically build and deploy the site.
 
+### Category Archives
+This project uses the `jekyll-archives` plugin. When you add a new category to a blog post, a new page will be automatically generated at `/categories/category-name/` to list all posts in that category.
+
 Live URL: [https://soinkleined.github.io/daveklein_com/](https://soinkleined.github.io/daveklein_com/)
 
 ## Writing Content (Markdown Support)

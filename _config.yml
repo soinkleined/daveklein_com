@@ -19,10 +19,19 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-archives
 
 # Sass
 sass:
   style: compressed
+
+# Jekyll Archives Configuration
+jekyll-archives:
+  enabled:
+    - categories
+  layout: 'page'
+  permalinks:
+    category: '/categories/:name/'
 
 # Exclude from build output
 exclude:
