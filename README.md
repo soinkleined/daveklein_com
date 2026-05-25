@@ -45,10 +45,10 @@ Live URL: [https://soinkleined.github.io/daveklein_com/](https://soinkleined.git
 The theme has been extended to support Markdown-driven content for blogs, CVs, and other standalone pages.
 
 ### Creating Pages (e.g., CV)
-Create a `.md` file in the root directory and use the `page` layout:
+Create a `.md` file in the root directory and use the `cv` layout:
 ```markdown
 ---
-layout: page
+layout: cv
 title: "My CV"
 description: "A brief overview of my professional experience."
 ---
@@ -57,11 +57,13 @@ description: "A brief overview of my professional experience."
 ```
 
 ### Creating Blog Posts
-Add Markdown files to the `_posts/` directory using the `YYYY-MM-DD-title.md` format:
+Add Markdown files to the `_posts/` directory using the `YYYY-MM-DD-title.md` format and the `post` layout:
 ```markdown
 ---
-layout: page
+layout: post
 title: "My First Post"
+image: /img/portfolio/1.jpg
+categories: [Jekyll, Tech]
 ---
 Your content here...
 ```
