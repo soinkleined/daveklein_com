@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: cv
 title: "CV"
 description: "Cloud and Infrastructure Services Engineering"
 ---
