@@ -148,11 +148,12 @@ header {
     color: #fff;
 
     &.header-subpage {
-        min-height: 150px !important; // Fixed height to show top portion
-        padding: 0 !important;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/header.jpg') !important;
         background-size: cover;
-        background-position: top center; // Anchor to the top
+        background-position: top center;
+        min-height: 150px !important;
+        width: 100%;
+        display: block; // Explicit block to ensure layout flow
     }
     .header-content {
         position: relative;
