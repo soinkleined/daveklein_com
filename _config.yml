@@ -38,7 +38,6 @@ exclude:
   - README.md
   - LICENCE
   - vendor
-  - docs
 
 # Sensible defaults
 future:      true
