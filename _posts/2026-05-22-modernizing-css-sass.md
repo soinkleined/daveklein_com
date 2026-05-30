@@ -5,7 +5,7 @@ date: 2026-05-22 12:00:00 +0000
 description: "Why I switched to Sass for better maintainability."
 categories: [CSS, Sass, Tech]
 categories: [CSS, Sass, Tech]
-image: /img/portfolio/2.jpg
+image: /img/images/2.jpg
 ---
 # Modern CSS
 

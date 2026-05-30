@@ -65,7 +65,7 @@ Add Markdown files to the `_posts/` directory using the `YYYY-MM-DD-title.md` fo
 ---
 layout: post
 title: "My First Post"
-image: /img/portfolio/1.jpg
+image: /img/images/1.jpg
 categories: [Jekyll, Tech]
 ---
 Your content here...

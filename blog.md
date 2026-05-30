@@ -21,7 +21,7 @@ permalink: /blog/
                 <div class="row mb-5 align-items-start post-item" data-categories="{{ post.categories | join: ' ' | slugify }}">
                     <div class="col-md-4">
                         <a href="{{ post.url | relative_url }}">
-                            <img src="{{ post.image | default: '/img/portfolio/1.jpg' | relative_url }}" class="img-fluid rounded" alt="{{ post.title }}">
+                            <img src="{{ post.image | default: '/img/images/1.jpg' | relative_url }}" class="img-fluid rounded" alt="{{ post.title }}">
                         </a>
                     </div>
                     <div class="col-md-8">
