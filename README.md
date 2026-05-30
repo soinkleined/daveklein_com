@@ -20,9 +20,8 @@ A Jekyll implementation of the [Creative Theme](http://startbootstrap.com/templa
 ## Setup
 
 1. Fill in your details in `_config.yml` (title, url, email, author, social usernames).
-2. Replace `img/header.jpg` and `img/portfolio/*.jpg` with your own images (JPG, PNG, WebP, or SVG all work).
-3. Add a `favicon.ico` to the repo root.
-4. Install Ruby 3.x via [rbenv](https://github.com/rbenv/rbenv) if not already available.
+2. Replace `img/header.jpg` and `img/images/*.jpg` with your own images (JPG, PNG, WebP, or SVG all work).
+3. Install Ruby 3.x via [rbenv](https://github.com/rbenv/rbenv) if not already available.
 5. Install dependencies and serve locally:
 
 ```bash
