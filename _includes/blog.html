@@ -1,6 +1,6 @@
 <div id="blog" class="container-fluid p-0">
     <div class="row g-0">
-        {% for post in site.posts %}
+        {% for post in site.posts limit: 6 %}
         <div class="col-lg-4 col-sm-6">
             <a href="{{ post.url | relative_url }}" class="portfolio-box">
                 <img src="{{ post.image | default: '/img/images/1.jpg' | relative_url }}" class="img-fluid" alt="{{ post.title }}">
